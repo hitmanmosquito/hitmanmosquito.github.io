@@ -13,6 +13,8 @@ $(function () {
     var maxTime = parseInt(getParam('m', 1000));
     if (minTime > maxTime)
         maxTime = minTime;
+    if (getParam('note') === '')
+        $('.note').show();
     
     function getRandPos() {
         return {marginLeft: `${Math.floor(Math.random() * 90) + 1}vw`, marginTop: `${Math.floor(Math.random() * 80) + 1}vh`};
