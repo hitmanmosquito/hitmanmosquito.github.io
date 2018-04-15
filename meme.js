@@ -2,7 +2,6 @@ $(function () {
     var mCount = Math.floor(Math.random() * 5) + 5;
     for (var i = 0; i < mCount; i++) {
         var meme = $(`<div class="meme"><img src="small_hitman.png" style="max-width: 100%"/><h2>Hitman #${i + 1}</h2></div>`);
-        meme.css({width: '10vw', position: 'absolute'})
         meme.appendTo('body');
     }
     var minTime = 250;
